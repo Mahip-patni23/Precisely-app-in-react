@@ -11,7 +11,7 @@ function LoginPage() {
                 <form className="authenticationPage-signIn-form">
                     <div className="form-group">
                         <label className="authenticationPage-label"><strong>Email</strong></label>
-                        <input type="email" className="form-control" placeholder="" />
+                        <input type="email" className="form-control" placeholder="Email" />
                     </div>
                     <div className="form-group">
                         <label className="authenticationPage-label"><strong>Password</strong></label>
