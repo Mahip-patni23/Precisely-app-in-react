@@ -1,0 +1,30 @@
+.DetailsFormBackground {
+  margin-right: 2rem;
+}
+
+.DetailsFormBackground-main-title > h3 {
+  color: #fff;
+  margin: 0 0 25px 0;
+  text-transform: uppercase;
+  font-weight: 750;
+  font-size: 4rem;
+}
+
+.DetailsFormBackground-main-title > p {
+  font-size: 1.125rem;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.DetailsFormBackground-main-title > p > em {
+  font-family: "Caveat", cursive;
+  font-style: normal;
+  font-size: 1.875rem;
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .DetailsFormBackground {
+    margin-top: 6rem;
+  }
+}

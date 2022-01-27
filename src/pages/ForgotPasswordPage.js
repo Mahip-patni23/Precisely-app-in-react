@@ -11,10 +11,12 @@ function ForgotPasswordPage() {
         <form className="authenticationPage-signIn-form">
             <div className="form-group">
                 <label className="authenticationPage-label"><strong>Email</strong></label>
-                <input type="email" className="form-control" placeholder="" />
+                <input type="email" className="form-control" placeholder="abc@gmail.com" />
             </div>
-            <div className="authenticationPage-signIn-btn">
-                <button className="btn">Submit</button>
+            <div className='form-group'>
+                <div className="authenticationPage-signIn-btn">
+                   <button className="btn">SUBMIT</button>
+                </div>
             </div>
         </form>
     </div>                     

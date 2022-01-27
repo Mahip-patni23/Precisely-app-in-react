@@ -11,7 +11,7 @@
   box-shadow: 0 0 35px 0 rgb(154 161 171 / 15%);
   border-radius: 5px;
   padding: 25px 50px;
-  width: 25%;
+  width: 33%;
   margin: 1rem 2rem;
 }
 
@@ -47,8 +47,8 @@ h4 {
   margin-bottom: 0.5rem;
 }
 
-.form-control {
-  border-radius: 1.25rem;
+/* .form-control {
+  border-radius: 40%;
   background: #fff;
   border: 1px solid #f0f1f5;
   color: #b1b1b1;
@@ -67,10 +67,10 @@ h4 {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #f0f1f5;
-  border-radius: 0.75rem;
+  border-radius: 40%;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-
+ */
 .authenticationPage-signIn-help {
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
@@ -110,16 +110,17 @@ h4 {
 
 .authenticationPage-signIn-btn > .btn {
   width: 100%;
-  padding: 16px 20px;
+  padding: 15px 0px;
   font-size: 1rem;
-  margin-top: 25px;
+  margin-top: 10px;
   border-radius: 20px;
   border: none;
   background-color: rgb(250, 250, 250);
   color: rgb(28, 27, 117);
-  font-weight: 600;
+  font-weight: 700;
   transition: all 0.3s linear;
   cursor: pointer;
+  margin-left: 1px;
 }
 
 .authenticationPage-signIn-btn > .btn:hover {
@@ -167,5 +168,3 @@ h4 {
     flex-direction: column;
   }
 }
-
-

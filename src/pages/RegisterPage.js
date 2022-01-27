@@ -1,5 +1,6 @@
 import React from 'react';
 import './LoginPage.css';
+import {Link} from 'react-router-dom';
 
 function RegisterPage() {
   return <div className="authenticationPage">
@@ -15,19 +16,19 @@ function RegisterPage() {
                     </div>
                     <div className="form-group">
                         <label className="authenticationPage-label"><strong>Email</strong></label>
-                        <input type="email" className="form-control" placeholder="" />
+                        <input type="email" className="form-control" placeholder="abc@gmail.com" />
                     </div>
                     <div className="form-group">
                         <label className="authenticationPage-label"><strong>Password</strong></label>
-                        <input type="password" className="form-control" placeholder="Password" />
+                        <input type="password" className="form-control" placeholder="********" />
                     </div>
                     
                     <div className="authenticationPage-signIn-btn">
-                        <button className="btn">Sign Me In</button>
+                        <button className="btn">Sign Up</button>
                     </div>
                 </form>
                 <div className="authenticationPage-footer">
-                    <p>Already have an account? <a href="./page-register.html">Sign in</a></p>
+                    <p>Already have an account? <Link to='/'>Sign in</Link></p>
                 </div>
             </div>                     
         </div>;

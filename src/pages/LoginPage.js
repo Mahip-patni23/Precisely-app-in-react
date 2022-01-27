@@ -1,7 +1,9 @@
 import React from 'react';
 import './LoginPage.css';
+import { useHistory, Link } from "react-router-dom";
 
 function LoginPage() {
+    const history = useHistory();
   return <div className="authenticationPage">
             <div className="authenticationPage-signIn-section">
                 <div className="authenticationPage-logo">
@@ -11,7 +13,7 @@ function LoginPage() {
                 <form className="authenticationPage-signIn-form">
                     <div className="form-group">
                         <label className="authenticationPage-label"><strong>Email</strong></label>
-                        <input type="email" className="form-control" placeholder="" />
+                        <input type="email" className="form-control" placeholder="abc@gmail.com" />
                     </div>
                     <div className="form-group">
                         <label className="authenticationPage-label"><strong>Password</strong></label>
@@ -25,15 +27,15 @@ function LoginPage() {
 						    </div>
                         </div>
                         <div className="form-group">
-                            <a className="authenticationPage-forgotPassword" href="page-forgot-password.html">Forgot Password?</a>
+                            <Link className="authenticationPage-forgotPassword" to='/ForgotPasswordPage'>Forgot Password?</Link>
                         </div>
                     </div>
                     <div className="authenticationPage-signIn-btn">
-                        <button className="btn">Sign Me In</button>
+                        <button className="btn" onClick={() => history.push("./QuestionForm1")}>Sign Me In</button>
                     </div>
                 </form>
                 <div className="authenticationPage-footer">
-                    <p>Don't have an account? <a href="./Register.js">Sign up</a></p>
+                    <p>Don't have an account? <Link to='/RegisterPage'>Sign up</Link></p>
                 </div>
             </div>                     
         </div>

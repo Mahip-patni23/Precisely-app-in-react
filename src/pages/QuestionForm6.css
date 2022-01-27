@@ -1,0 +1,13 @@
+.range-input {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.range-input > label {
+  color: white;
+}
+
+.range-input > input {
+  margin-top: -7px;
+}

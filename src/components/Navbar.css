@@ -1,0 +1,25 @@
+.Navbar {
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: transparent;
+}
+
+.Navbar-signout-btn {
+  padding: 10px 20px;
+  background-color: rgb(231, 231, 13);
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+}
+
+.Navbar-signout-btn:hover {
+  background-color: rgb(204, 204, 38);
+}
