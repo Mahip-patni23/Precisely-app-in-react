@@ -11,7 +11,7 @@
   box-shadow: 0 0 35px 0 rgb(154 161 171 / 15%);
   border-radius: 5px;
   padding: 25px 50px;
-  width: 33%;
+  width: 35%;
   margin: 1rem 2rem;
 }
 
@@ -48,7 +48,6 @@ h4 {
 }
 
 .form-control {
-  border-radius: 40%;
   background: #fff;
   border: 1px solid #f0f1f5;
   color: #b1b1b1;

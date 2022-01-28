@@ -3,7 +3,6 @@ import './QuestionForm1.css';
 import './QuestionForm5.css';
 import QuestionFormBackground from '../components/QuestionFormBackground';
 import Navbar from '../components/Navbar';
-import {Dropdown} from 'react-bootstrap';
 import {useHistory} from 'react-router-dom';
 
 function QuestionForm5() {

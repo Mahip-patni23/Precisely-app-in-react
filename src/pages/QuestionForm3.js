@@ -1,13 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './QuestionForm1.css';
 import './QuestionForm3.css';
 import QuestionFormBackground from '../components/QuestionFormBackground';
 import Navbar from '../components/Navbar';
 import {useHistory} from 'react-router-dom';
+import {Button, Modal, Form} from 'react-bootstrap';
 
 
-function QuestionForm3() {
+function QuestionForm3(props) {
     const history = useHistory();
+    const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
 
 
   return <div className="DetailsForm3">
@@ -29,9 +35,42 @@ function QuestionForm3() {
                         </div>
 
                         <div className="form-group add-btn">
-                          <button className='add-btn-class'>
-                              Add
-                          </button>
+                        <Button variant="primary" className='add-btn-class' onClick={handleShow}>
+                          Add
+                        </Button>
+
+                          <Modal{...props}
+                            size="lg"
+                            aria-labelledby="contained-modal-title-vcenter"
+                            centered show={show} onHide={handleClose}>
+                            <Modal.Header closeButton>
+                              <Modal.Title>Work Experience</Modal.Title>
+                            </Modal.Header>
+                            <Modal.Body>
+                            <Form>
+                              <Form.Group controlId="formBasicEmail">
+                                
+                                <Form.Control type="text" placeholder="Company" />
+                                
+                              </Form.Group>
+
+                              <Form.Group controlId="formBasicPassword">
+                                
+                                <Form.Control className='form-control' type="text" placeholder="Position" />
+
+                              </Form.Group>
+                            </Form>
+                            </Modal.Body>
+                            <Modal.Footer>
+                              <Button variant="secondary" onClick={handleClose}>
+                                Close
+                              </Button>
+                              <Button variant="primary" onClick={handleClose}>
+                                Save
+                              </Button>
+                            </Modal.Footer>
+                          </Modal>
+
                         </div>
                         
                         </div>
