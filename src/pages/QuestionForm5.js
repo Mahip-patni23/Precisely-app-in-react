@@ -18,7 +18,7 @@ function QuestionForm5() {
 
                       <div className="form-step">
                         <h3 className="main_question">
-                          <strong>5 of 7</strong>Please enter your scores
+                          <strong>5 of 8</strong>Please enter your scores
                         </h3>
                         <div className="form-group">
                           <label>*In case, you have not taken any of these test you may well enter an indicative expected scores between the allowed range</label>

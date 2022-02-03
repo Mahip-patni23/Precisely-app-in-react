@@ -4,9 +4,17 @@ import QuestionFormBackground from '../components/QuestionFormBackground';
 import Navbar from '../components/Navbar';
 import {Dropdown} from 'react-bootstrap';
 import {useHistory} from 'react-router-dom';
+import Footer from '../components/Footer';
 
 function QuestionForm1() {
   const history = useHistory();
+  
+  
+
+  const handleChange = (e) => {
+    const [name, value]  = e.target.value;
+  }
+
   return <div className="DetailsForm1">
             <Navbar></Navbar>
             
@@ -18,7 +26,7 @@ function QuestionForm1() {
 
                       <div className="form-step">
                         <h3 className="main_question">
-                          <strong>1 of 7</strong>Please fill with your details
+                          <strong>1 of 8</strong>Please fill with your details
                         </h3>
                         <div className="form-group">
                           <input type="text" placeholder="Your Name" className="form-control"/>
@@ -33,50 +41,45 @@ function QuestionForm1() {
                           <ul>
                             <li>
                               <div className="checkbox_radio_container">
-                                <input type="radio" className="required" value="Poor" />
+                                <input 
+                                type="radio" 
+                                id="male"
+                                name = "gender" 
+                                values="male"
+                                className="required"
+                                onChange={handleChange} />
                                 {/* <label className="radio" htmlFor="poor_1"></label> */}
-                                <label htmlFor="poor_1" className="wrapper">Male</label>
+                                <label htmlFor="male" className="wrapper">Male</label>
                               </div>
                             </li>
                             <li>
                               <div className="checkbox_radio_container">
-                                <input type="radio" id="average_1" name="question_1" className="required" value="Average" />
+                                <input 
+                                type="radio" 
+                                id="female"
+                                name="gender"
+                                value = "female"
+                                className="required" 
+                                onChange={handleChange}/>
                                 {/* <label className="radio" htmlFor="average_1"></label> */}
-                                <label htmlFor="average_1" className="wrapper">Female</label>
+                                <label htmlFor="female" className="wrapper">Female</label>
                               </div>
                             </li>
                             <li>
                               <div className="checkbox_radio_container">
-                                <input type="radio" id="excellent_1" name="question_1" className="required" value="Excellent"/>
+                                <input 
+                                type="radio" 
+                                id="others"
+                                name = "gender" 
+                                value = "others"
+                                className="required" 
+                                onChange={handleChange}/>
                                 {/* <label className="radio" htmlFor="excellent_1"></label> */}
-                                <label htmlFor="excellent_1" className="wrapper">Others</label>
+                                <label htmlFor="others" className="wrapper">Others</label>
                               </div>
                             </li>
                           </ul>
                         </div>
-                        {/* <div className="dropdown form-group">
-                          <button className="btn btn-secondary dropdown-toggle form-control marital" type="button"
-                            id="dropdownMenu2">
-                            Marital status
-                          </button>
-                          <div className="dropdown-menu">
-                            <button className="dropdown-item martial-drop" type="button">
-                              Married
-                            </button>
-                            <button className="dropdown-item martial-drop" type="button">
-                              Unmarried
-                            </button>
-                            <button className="dropdown-item martial-drop" type="button">
-                              Separated
-                            </button>
-                            <button className="dropdown-item martial-drop" type="button">
-                              Divorced
-                            </button>
-                            <button className="dropdown-item mart" type="button">
-                              Widowed
-                            </button>
-                          </div>
-                        </div> */}
                         <Dropdown>
                           <Dropdown.Toggle id="dropdown-button-dark-example1" variant="secondary">
                            Marital Status
@@ -102,7 +105,10 @@ function QuestionForm1() {
                       <button className="next-btn btn" onClick={() => history.push('./QuestionForm2')}>Next</button>
                 </form>
             </div>
+            <Footer></Footer>
         </div>
+        
+
 }
 
 export default QuestionForm1;

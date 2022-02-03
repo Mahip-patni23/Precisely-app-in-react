@@ -1,0 +1,16 @@
+.Footer {
+  width: 100%;
+  margin-bottom: -7rem;
+}
+
+.animated_link {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.animated_link:hover {
+  color: rgb(216, 216, 216);
+  text-decoration: underline;
+}

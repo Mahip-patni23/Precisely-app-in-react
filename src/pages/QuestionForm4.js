@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './QuestionForm1.css';
 import './QuestionForm3.css';
+import './QuestionForm4.css';
 import QuestionFormBackground from '../components/QuestionFormBackground';
 import Navbar from '../components/Navbar';
 import {useHistory} from 'react-router-dom';
@@ -24,7 +25,7 @@ function QuestionForm4(props) {
 
                       <div className="form-step">
                         <h3 className="main_question">
-                          <strong>4 of 7</strong>Honors and Awards history
+                          <strong>4 of 8</strong>Honors and Awards history
                         </h3>
                         <div className="form-group">
                           <label>Title</label>
@@ -47,13 +48,13 @@ function QuestionForm4(props) {
                               <Form>
                               <Form.Group controlId="formBasicEmail">
                                 
-                                <Form.Control type="text" placeholder="Title" />
+                                <Form.Control className="modal_input" type="text" placeholder="Title" />
                                 
                               </Form.Group>
 
                               <Form.Group controlId="formBasicPassword">
                                 
-                                <Form.Control type="text" placeholder="Issuer" />
+                                <Form.Control className="modal_input" type="text" placeholder="Issuer" />
 
                               </Form.Group>
                             </Form>

@@ -11,6 +11,10 @@ import QuestionForm4 from './pages/QuestionForm4';
 import QuestionForm5 from './pages/QuestionForm5';
 import QuestionForm6 from './pages/QuestionForm6';
 import QuestionForm7 from './pages/QuestionForm7';
+import QuestionForm8 from './pages/QuestionForm8';
+import Dashboard from './pages/Dashboard';
+import Calendar from './pages/Calendar';
+import ScheduleCall from './pages/ScheduleCall';
 
 
 function App() {
@@ -57,6 +61,23 @@ function App() {
           <Route path='/QuestionForm7'>
             <QuestionForm7></QuestionForm7>
           </Route>
+
+          <Route path='/QuestionForm8'>
+            <QuestionForm8></QuestionForm8>
+          </Route>
+
+          <Route path='/Dashboard'>
+            <Dashboard></Dashboard>
+          </Route>
+
+          <Route path='/Calendar'>
+            <Calendar></Calendar>
+          </Route>
+
+          <Route path='/ScheduleCall'>
+            <ScheduleCall></ScheduleCall>
+          </Route>
+
         </Switch>
         
       </div>

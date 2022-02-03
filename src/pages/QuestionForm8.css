@@ -1,0 +1,17 @@
+.wrapper {
+  color: white;
+}
+
+.checkbox_radio_container {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.checkmark {
+  height: 25px;
+  width: 25px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+}

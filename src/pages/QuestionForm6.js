@@ -3,7 +3,7 @@ import './QuestionForm1.css';
 import './QuestionForm6.css';
 import QuestionFormBackground from '../components/QuestionFormBackground';
 import Navbar from '../components/Navbar';
-import {Dropdown} from 'react-bootstrap';
+import {Dropdown, DropdownButton, ButtonGroup} from 'react-bootstrap';
 import {useHistory} from 'react-router-dom';
 
 function QuestionForm6() {
@@ -19,14 +19,14 @@ function QuestionForm6() {
 
                       <div className="form-step">
                         <h3 className="main_question">
-                          <strong>6 of 7</strong>Please fill with your details
+                          <strong>6 of 8</strong>Please fill with your details
                         </h3>
                         <div className="form-group">
                           <input type="number" placeholder="University Ranking (0-1000)" className="form-control"/>
                         </div>
                         
                         
-                        <Dropdown>
+                        {/* <Dropdown>
                           <Dropdown.Toggle id="dropdown-button-dark-example1" variant="secondary">
                            Select Majors
                           </Dropdown.Toggle>
@@ -47,13 +47,31 @@ function QuestionForm6() {
                             <Dropdown.Item href="#/action-3">Mathematics</Dropdown.Item>
                             <Dropdown.Item href="#/action-3">Environmental Engineering</Dropdown.Item>
                           </Dropdown.Menu>
-                        </Dropdown>
+                        </Dropdown> */}
+
+                        <div className="mb-2">
+                          {[DropdownButton].map((DropdownType, idx) => (
+                            <DropdownType
+                              as={ButtonGroup}
+                              key={idx}
+                              id={`dropdown-button-drop-${idx}`}
+                              size="lg"
+                              title="Select Majors"
+                            >
+                              <Dropdown.Item eventKey="1">Action</Dropdown.Item>
+                              <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
+                              <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
+                              <Dropdown.Divider />
+                              <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
+                            </DropdownType>
+                          ))}
+                        </div>
 
 
 
                         <div className="form-group range-input">
                           <label>How important is college ranking to you?</label>
-                          <input type="range" /* className="form-control" *//>
+                          <input type="range" />
                         </div>
 
 

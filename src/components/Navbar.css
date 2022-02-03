@@ -20,6 +20,15 @@
   transition: all 0.3s linear;
 }
 
+.Navbar-icons {
+  color: white;
+}
+
+.socials{
+  margin-left: 8px;
+  cursor: pointer;
+}
+
 .Navbar-signout-btn:hover {
   background-color: rgb(204, 204, 38);
 }

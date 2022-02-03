@@ -57,7 +57,7 @@ h4 {
 .form-control {
   outline-width: 0;
   display: block;
-  width: 95%;
+  width: 100%;
   padding: 0.1rem 0.5rem;
   font-size: 0.875rem;
   font-weight: 600;

@@ -27,7 +27,7 @@ function QuestionForm3(props) {
 
                       <div className="form-step">
                         <h3 className="main_question">
-                          <strong>3 of 7</strong>Please fill your Work history
+                          <strong>3 of 8</strong>Please fill your Work history
                         </h3>
                         <div className="form-group">
                           <label>Company</label>

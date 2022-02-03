@@ -19,7 +19,7 @@ function QuestionForm7() {
 
                       <div className="form-step">
                         <h3 className="main_question">
-                          <strong>7 of 7</strong>Supplementary questions
+                          <strong>7 of 8</strong>Supplementary questions
                         </h3>
                         <div className="form-group">
                           <input type="text" placeholder="Do you have any country preference" className="form-control"/>
@@ -33,7 +33,7 @@ function QuestionForm7() {
                         
                       </div>
                       <div className='btn-container'>
-                            <button className="next-btn btn">Next</button>
+                            <button className="next-btn btn" onClick={() => history.push('./QuestionForm8')}>Next</button>
                             <button className="prev-btn btn" onClick={() => history.push('./QuestionForm6')}>Prev</button>
                       </div>
                 </form>
