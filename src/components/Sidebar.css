@@ -2,7 +2,7 @@
 .deznav {
     width: 21.563rem;
     padding-bottom: 0;
-    height: auto;
+    height: 266%;
     position: absolute;
     top: 0;
     padding-top: 120px;
@@ -15,7 +15,7 @@
 
 .deznav-scroll {
     position: relative;
-    height: 100%; 
+    height: auto; 
 }
 
 

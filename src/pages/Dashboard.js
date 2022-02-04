@@ -45,6 +45,23 @@ function Dashboard() {
                 </h3>
               </div>
             </div>
+
+
+
+            <div className="dash-card-chart">
+              <div className="dash-chart">
+                <Chart
+                  data={userData}
+                  title="Trending Universities On Precisely"
+                  grid
+                  dataKey="Active User"
+                ></Chart>
+              </div>
+            </div>
+
+
+
+
           </div>
 
           <div className="card-column">
@@ -79,16 +96,6 @@ function Dashboard() {
           </div>
         </div>
 
-        <div className="dash-card dash-card-chart">
-          <div className="dash-chart">
-            <Chart
-              data={userData}
-              title="Trending Universities On Precisely"
-              grid
-              dataKey="Active User"
-            ></Chart>
-          </div>
-        </div>
 
         <div className="dash-card-section">
           <div className="dash-card dash-card-3">
