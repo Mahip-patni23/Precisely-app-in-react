@@ -10,7 +10,7 @@ function Calendar() {
     <DashboardHeader name="Calendar"/>
 
     <div className="dash-main">
-      <InlineWidget url="https://calendly.com/your_scheduling_page" />
+      {/* <InlineWidget url="https://calendly.com/your_scheduling_page" /> */}
     </div>
   </>;
 }

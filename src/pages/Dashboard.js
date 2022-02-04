@@ -8,6 +8,7 @@ import SchoolIcon from "@mui/icons-material/School";
 import StarRoundedIcon from "@mui/icons-material/StarRounded";
 import PhonelinkIcon from "@mui/icons-material/Phonelink";
 import AttachMoneyRoundedIcon from "@mui/icons-material/AttachMoneyRounded";
+import Carousel from 'react-bootstrap/Carousel'
 
 
 function Dashboard() {
@@ -91,9 +92,9 @@ function Dashboard() {
 
         <div className="dash-card-section">
           <div className="dash-card dash-card-3">
-            <h2 className="dash-card-3-heading">
+            <h5 className="dash-card-3-heading">
               Top Recommended Universities
-            </h2>
+            </h5>
 
             <div className="border-line"></div>
 
@@ -112,16 +113,48 @@ function Dashboard() {
 
         <div className="dash-card-section">
           <div className="card-column">
-            <div className="dash-card dash-card-4"></div>
             <div className="dash-card dash-card-4">
-                
+              <h5>
+                Probability for top recommended colleges
+              </h5>
+              <p>
+                This percentage is based on prediction models and in no way guarantee's your addmission to any mentioned institue.
+              </p>
+            </div>
+
+
+            <div className="dash-card dash-card-6">
+              <h5>
+                Recomended Mentors for You
+              </h5>
+              <p>
+                Following are the mentors who have mentored students with similar profile as yours
+              </p>
+
+
+
+
+
+
+
             </div>
           </div>
+
+
           <div className="dash-card dash-card-5">
-            
+            <h5>
+              Precisely's Offerings
+            </h5>
           </div>
         </div>
       </section>
+
+      <div class="footer">
+        <p>Copyright ©
+          <a href="http://precisely.co.in/" target="_blank"> Precisely - Study Abroad </a>
+          2020</p>
+      </div>
+
     </>
   );
 }
