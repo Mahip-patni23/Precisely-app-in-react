@@ -131,7 +131,7 @@ function Dashboard() {
                 Probability for top recommended colleges
               </h5>
               <p>
-                This percentage is based on prediction models and in no way guarantee's your addmission to any mentioned institue.
+                This percentage is based on prediction models and in no way guarantee's your addmission to any mentioned institute.
               </p>
             </div>
 
