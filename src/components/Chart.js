@@ -6,7 +6,7 @@ function Chart({title, data, dataKey, grid}) {
 
     return (
         <div className="chart">
-            <h3 className="chart_title">{title}</h3>
+            <h5 className="chart_title">{title}</h5>
             <ResponsiveContainer width="100%" aspect={4 / 1}>
                 <BarChart width={600} height={300} data={data}>
                     <XAxis dataKey="name" stroke="black"></XAxis>
