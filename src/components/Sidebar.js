@@ -18,11 +18,11 @@ function Sidebar() {
             <div className="deznav-scroll">
                 <ul className="metismenu" id="menu">
                     
-                    <li>                        
-                        <a href="./index.html" className="ai-icon" aria-expanded="false">                        
+                    <li>
+                        <Link to='./Dashboard' className='ai-icon' aria-expanded="false">
                             <ListOutlinedIcon />
-                            <span className='nav-text'>Dashboard</span>                      
-                        </a>                        
+                            <span className='nav-text'>Dashboard</span>  
+                        </Link>                                             
                     </li>
                     
                     <li>
