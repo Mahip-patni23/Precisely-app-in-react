@@ -40,6 +40,11 @@ h4 {
   margin-bottom: 1rem;
 }
 
+.authenticationPage-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
 .authenticationPage-label {
   color: #fff !important;
   margin-bottom: 0.25rem !important;

@@ -1,8 +1,12 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './LoginPage.css';
 import {Link} from 'react-router-dom';
 
 function RegisterPage() {
+  const[username, setUsername] = useState("");
+  const[phoneNumber, setPhoneNumber] = useState("");
+  /* const[password, setPassword] = useState(""); */
+
   return <div className="authenticationPage">
             <div className="authenticationPage-signIn-section">
                 <div className="authenticationPage-logo">
@@ -10,18 +14,18 @@ function RegisterPage() {
 			    </div>
                 <h4 className="authenticationPage-signIn-heading">Sign up your account</h4>
                 <form className="authenticationPage-signIn-form">
-                    <div className="form-group">
+                    <div className="form-group authenticationPage-form-group">
                         <label className="authenticationPage-label"><strong>Username</strong></label>
-                        <input type="text" className="form-control" placeholder="username" />
+                        <input type="text" className="form-control" placeholder="username" value={username} onChange={(e) => setUsername(e.target.value)}/>
                     </div>
-                    <div className="form-group">
-                        <label className="authenticationPage-label"><strong>Email</strong></label>
-                        <input type="email" className="form-control" placeholder="abc@gmail.com" />
+                    <div className="form-group authenticationPage-form-group">
+                        <label className="authenticationPage-label"><strong>Phone Number</strong></label>
+                        <input type="text" className="form-control" placeholder="99871*****" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)}/>
                     </div>
-                    <div className="form-group">
+                    {/* <div className="form-group authenticationPage-form-group">
                         <label className="authenticationPage-label"><strong>Password</strong></label>
-                        <input type="password" className="form-control" placeholder="********" />
-                    </div>
+                        <input type="password" className="form-control" placeholder="********" value={password}/>
+                    </div> */}
                     
                     <div className="authenticationPage-signIn-btn">
                         <button className="btn">Sign Up</button>

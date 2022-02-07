@@ -28,13 +28,13 @@
   display: flex;
 }
 
-.dash-card:hover {
+/* .dash-card:hover {
   background-color: #2bc155;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 4px 0 rgba(0, 0, 0, 0.48);
   transform: translateZ(5px);
   position: relative;
   overflow: hidden;
-}
+} */
 
 .card-icon {
   flex: 1;
@@ -81,9 +81,8 @@
   height: 600px;
 }
 
-.dash-table-heading {
-  display: flex;
-  justify-content: space-between;
+.dash-table {
+  margin-top: 5px;
 }
 
 .border-line {

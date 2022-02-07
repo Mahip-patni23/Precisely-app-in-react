@@ -8,6 +8,7 @@ import SchoolIcon from "@mui/icons-material/School";
 import StarRoundedIcon from "@mui/icons-material/StarRounded";
 import PhonelinkIcon from "@mui/icons-material/Phonelink";
 import AttachMoneyRoundedIcon from "@mui/icons-material/AttachMoneyRounded";
+import {Table} from 'react-bootstrap';
 
 
 function Dashboard() {
@@ -80,12 +81,7 @@ function Dashboard() {
 
         <div className="dash-card dash-card-chart">
           <div className="dash-chart">
-            <Chart
-              data={userData}
-              title="Trending Universities On Precisely"
-              grid
-              dataKey="Active User"
-            ></Chart>
+            <Chart></Chart>
           </div>
         </div>
 
@@ -97,14 +93,19 @@ function Dashboard() {
 
             <div className="border-line"></div>
 
-            <table className="dash-table">
-              <th className="dash-table-heading">
-                <td>#</td>
-                <td>University Name</td>
-                <td>Ranking</td>
-                <td>Cost</td>
-              </th>
-            </table>
+            <Table className="dash-table" striped bordered hover>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>University Name</th>
+                  <th>Ranking</th>
+                  <th>Cost</th>
+                </tr>
+              </thead>
+              <tbody>
+    
+              </tbody>
+            </Table>
 
             <div className="border-line"></div>
           </div>

@@ -11,22 +11,22 @@ function LoginPage() {
 			    </div>
                 <h4 className="authenticationPage-signIn-heading">Sign in your account</h4>
                 <form className="authenticationPage-signIn-form">
-                    <div className="form-group">
+                    <div className="form-group authenticationPage-form-group">
                         <label className="authenticationPage-label"><strong>Email</strong></label>
                         <input type="email" className="form-control" placeholder="abc@gmail.com" />
                     </div>
-                    <div className="form-group">
+                    <div className="form-group authenticationPage-form-group">
                         <label className="authenticationPage-label"><strong>Password</strong></label>
                         <input type="password" className="form-control" placeholder="Password" />
                     </div>
                     <div className="authenticationPage-signIn-help">
-                        <div className="form-group">
+                        <div className="form-group authenticationPage-form-group">
                            <div className="authenticationPage-rememberMyPreference">
 							    <input type="checkbox" className="custom-control-input" id="basic_checkbox_1"/>
 							    <label className="custom-control-label" htmlFor="basic_checkbox_1">Remember my preference</label>
 						    </div>
                         </div>
-                        <div className="form-group">
+                        <div className="form-group authenticationPage-form-group">
                             <Link className="authenticationPage-forgotPassword" to='/ForgotPasswordPage'>Forgot Password?</Link>
                         </div>
                     </div>
