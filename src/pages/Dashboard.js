@@ -2,13 +2,21 @@ import React from "react";
 import "./Dashboard.css";
 import DashboardHeader from "../components/DashboardHeader";
 import Sidebar from "../components/Sidebar";
-import Chart from "../components/Chart";
+import Chart1 from "../components/Chart";
 import { userData } from "../dummyData";
 import SchoolIcon from "@mui/icons-material/School";
 import StarRoundedIcon from "@mui/icons-material/StarRounded";
 import PhonelinkIcon from "@mui/icons-material/Phonelink";
 import AttachMoneyRoundedIcon from "@mui/icons-material/AttachMoneyRounded";
+import LooksOneIcon from '@mui/icons-material/LooksOne';
+import LooksTwoIcon from '@mui/icons-material/LooksTwo';
+import Looks3Icon from '@mui/icons-material/Looks3';
+import Looks4Icon from '@mui/icons-material/Looks4';
+import Looks5Icon from '@mui/icons-material/Looks5';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import StarPurple500RoundedIcon from '@mui/icons-material/StarPurple500Rounded';
 import {Table} from 'react-bootstrap';
+import Caraousel from "../components/Caraousel";
 
 
 function Dashboard() {
@@ -45,6 +53,18 @@ function Dashboard() {
                 </h3>
               </div>
             </div>
+
+
+
+            <div className="dash-card-chart">
+              <div className="dash-chart">
+                <Chart1></Chart1>
+              </div>
+            </div>
+
+
+
+
           </div>
 
           <div className="card-column">
@@ -79,17 +99,12 @@ function Dashboard() {
           </div>
         </div>
 
-        <div className="dash-card dash-card-chart">
-          <div className="dash-chart">
-            <Chart></Chart>
-          </div>
-        </div>
 
         <div className="dash-card-section">
           <div className="dash-card dash-card-3">
-            <h2 className="dash-card-3-heading">
+            <h5>
               Top Recommended Universities
-            </h2>
+            </h5>
 
             <div className="border-line"></div>
 
@@ -113,16 +128,154 @@ function Dashboard() {
 
         <div className="dash-card-section">
           <div className="card-column">
-            <div className="dash-card dash-card-4"></div>
             <div className="dash-card dash-card-4">
-                
+              <h5>
+                Probability for top recommended colleges
+              </h5>
+              <p>
+                This percentage is based on prediction models and in no way guarantee's your addmission to any mentioned institute.
+              </p>
+            </div>
+
+
+            <div className="dash-card dash-card-6">
+              <h5>
+                Recomended Mentors for You
+              </h5>
+              <p>
+                Following are the mentors who have mentored students with similar profile as yours
+              </p>
+              <Caraousel></Caraousel>
             </div>
           </div>
+
+
           <div className="dash-card dash-card-5">
-            
-          </div>
+            <h5>
+              Precisely's Offerings
+            </h5>
+
+            <div className="border-line"></div>
+
+            <div className='services-card'>
+              <div className="services-card-inner">
+
+                <div className="services-card-icon">
+                  <LooksOneIcon sx={{ fontSize: 100 }} />
+                  {/* <h9><AccessTimeIcon sx={{ fontSize: 20 }} />3-5 days</h9> */}
+                </div>
+
+                <div className="services-card-content">
+                  <h6>SOP review & editing</h6>
+                  <h7>Precisely</h7>
+                </div>
+
+              </div>
+              <div className="services-review">
+                <h9><AccessTimeIcon sx={{ fontSize: 20 }} />3-5 days</h9> <h9><StarPurple500RoundedIcon sx={{ fontSize: 20 }} />50 reviews</h9>
+              </div>
+
+            </div>
+
+            <div className="border-line"></div>
+
+
+
+            <div className='services-card'>
+
+              <div className="services-card-inner">
+
+                <div className="services-card-icon">
+                  <LooksTwoIcon sx={{ fontSize: 100}} />
+                </div>
+                <div className="services-card-content">
+                  <h6>Addmission Interview Preperation</h6>
+                  <h7>YSI x Precisely</h7>
+                </div>
+              </div>
+
+              <div className="services-review">
+
+                <h9><AccessTimeIcon sx={{ fontSize: 20 }} />1-2 weeks</h9> <h9><StarPurple500RoundedIcon sx={{ fontSize: 20 }} />50 reviews</h9>
+              </div>
+
+
+            </div>
+
+            <div className="border-line"></div>
+
+            <div className='services-card'>
+              <div className="services-card-inner">
+                <div className="services-card-icon">
+                  <Looks3Icon sx={{ fontSize: 100 }} />
+
+                </div>
+                <div className="services-card-content">
+                  <h6>IELTS/TOFEL/CAE Test Preperation</h6>
+                  <h7>University Connection x Precisely</h7>
+                </div>
+              </div>
+              <div className="services-review">
+                <h9><AccessTimeIcon sx={{ fontSize: 20 }} />2-3 weeks</h9> <h9><StarPurple500RoundedIcon sx={{ fontSize: 20 }} />50 reviews</h9>
+              </div>
+
+
+            </div>
+
+            <div className="border-line"></div>
+
+            <div className='services-card'>
+              <div className="services-card-inner">
+                <div className="services-card-icon">
+                  <Looks4Icon sx={{ fontSize: 100 }} />
+
+                </div>
+                <div className="services-card-content">
+                  <h6>Full University Application Guidance</h6>
+                  <h7>Precisely</h7>
+                </div>
+              </div>
+              <div className="services-review">
+                <h9><AccessTimeIcon sx={{ fontSize: 20 }} />1-2 month(s)</h9> <h9><StarPurple500RoundedIcon sx={{ fontSize: 20 }} />50 reviews</h9>
+              </div>
+
+
+            </div>
+
+            <div className="border-line"></div>
+
+            <div className="services-card">
+              <div className="services-card-inner">
+                <div className="services-card-icon">
+                  <Looks5Icon sx={{ fontSize: 100 }} />
+
+                </div>
+
+                <div className="services-card-content">
+                  <h6>Loan/Finance Services</h6>
+                  <h7>HDFC Credila x Precisely</h7>
+                </div>
+              </div>
+              <div className="services-review">
+                <h9><AccessTimeIcon sx={{ fontSize: 20 }} />15-20 days</h9> <h9><StarPurple500RoundedIcon sx={{ fontSize: 20 }} />50 reviews</h9>
+              </div>
         </div>
-      </section>
+
+
+        <div className="border-line"></div>
+
+
+
+      </div>
+    </div>
+      </section >
+
+    <div class="footer">
+      <p>Copyright ©
+        <a href="http://precisely.co.in/" > Precisely - Study Abroad </a>
+        2020</p>
+    </div>
+
     </>
   );
 }
