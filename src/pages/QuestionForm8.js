@@ -3,7 +3,7 @@ import './QuestionForm1.css';
 import './QuestionForm8.css';
 import QuestionFormBackground from '../components/QuestionFormBackground';
 import Navbar from '../components/Navbar';
-import {useHistory} from 'react-router-dom';
+import {Link, useHistory} from 'react-router-dom';
 
 
 function QuestionForm8() {
@@ -86,7 +86,7 @@ function QuestionForm8() {
                         </div>
                         </div>
                         <div className='btn-container'>
-                            <button className="next-btn btn">Submit</button>
+                            <Link to="./Dashboard"><button className="next-btn btn">Submit</button></Link>
                             <button className="prev-btn btn" onClick={() => history.push('./QuestionForm7')}>Prev</button>
                         </div> 
                 </form>

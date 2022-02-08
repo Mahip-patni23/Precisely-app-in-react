@@ -8,7 +8,8 @@ function Navbar() {
     return (
         <div className="Navbar">
             <div className="Navbar-logo">
-                <img className="Navbar-logo-image" src="../../../images/logo-full.png" alt="brand-logo" />
+                <img className="logo-abbr" src="https://demo.precisely.co.in/images/logo.png" alt=""></img>
+                <img className="brand-title" src='https://demo.precisely.co.in/images/logo-text.png' alt=""></img>
             </div>
 
             <div className="Navbar-icons">
