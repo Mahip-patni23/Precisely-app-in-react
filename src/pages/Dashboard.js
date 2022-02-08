@@ -3,7 +3,7 @@ import "./Dashboard.css";
 import DashboardHeader from "../components/DashboardHeader";
 import Sidebar from "../components/Sidebar";
 import Chart1 from "../components/Chart";
-import { userData } from "../dummyData";
+// import { userData } from "../dummyData";
 import SchoolIcon from "@mui/icons-material/School";
 import StarRoundedIcon from "@mui/icons-material/StarRounded";
 import PhonelinkIcon from "@mui/icons-material/Phonelink";
@@ -28,7 +28,7 @@ function Dashboard() {
       <section className="dash-main">
         <div className="dash-card-section">
           <div className="card-column">
-            <div className="dash-card">
+            <div className="dash-card card-hover">
               <div className="card-icon">
                 <SchoolIcon sx={{ fontSize: 50 }} color="success"></SchoolIcon>
               </div>
@@ -39,7 +39,7 @@ function Dashboard() {
                 </h3>
               </div>
             </div>
-            <div className="dash-card">
+            <div className="dash-card card-hover">
               <div className="card-icon">
                 <PhonelinkIcon
                   sx={{ fontSize: 50 }}
@@ -68,7 +68,7 @@ function Dashboard() {
           </div>
 
           <div className="card-column">
-            <div className="dash-card">
+            <div className="dash-card card-hover">
               <div className="card-icon">
                 <StarRoundedIcon
                   sx={{ fontSize: 50 }}
@@ -82,7 +82,7 @@ function Dashboard() {
                 </h3>
               </div>
             </div>
-            <div className="dash-card">
+            <div className="dash-card card-hover">
               <div className="card-icon">
                 <AttachMoneyRoundedIcon
                   sx={{ fontSize: 50 }}
@@ -161,7 +161,7 @@ function Dashboard() {
               <div className="services-card-inner">
 
                 <div className="services-card-icon">
-                  <LooksOneIcon sx={{ fontSize: 100 }} />
+                  <LooksOneIcon sx={{ fontSize: 100, color: "#2aa769" }} />
                   {/* <h9><AccessTimeIcon sx={{ fontSize: 20 }} />3-5 days</h9> */}
                 </div>
 
@@ -172,7 +172,7 @@ function Dashboard() {
 
               </div>
               <div className="services-review">
-                <h9><AccessTimeIcon sx={{ fontSize: 20 }} />3-5 days</h9> <h9><StarPurple500RoundedIcon sx={{ fontSize: 20 }} />50 reviews</h9>
+                <h9><AccessTimeIcon sx={{ fontSize: 20 }} /> 3-5 days</h9> <h9><StarPurple500RoundedIcon sx={{ fontSize: 20, color: "#e5c702" }} /> 50 reviews</h9>
               </div>
 
             </div>
@@ -186,7 +186,7 @@ function Dashboard() {
               <div className="services-card-inner">
 
                 <div className="services-card-icon">
-                  <LooksTwoIcon sx={{ fontSize: 100}} />
+                  <LooksTwoIcon sx={{ fontSize: 100, color: "#b800ff"}} />
                 </div>
                 <div className="services-card-content">
                   <h6>Addmission Interview Preperation</h6>
@@ -196,7 +196,7 @@ function Dashboard() {
 
               <div className="services-review">
 
-                <h9><AccessTimeIcon sx={{ fontSize: 20 }} />1-2 weeks</h9> <h9><StarPurple500RoundedIcon sx={{ fontSize: 20 }} />50 reviews</h9>
+                <h9><AccessTimeIcon sx={{ fontSize: 20 }} /> 1-2 weeks</h9> <h9><StarPurple500RoundedIcon sx={{ fontSize: 20, color: "#e5c702"  }} /> 50 reviews</h9>
               </div>
 
 
@@ -207,7 +207,7 @@ function Dashboard() {
             <div className='services-card'>
               <div className="services-card-inner">
                 <div className="services-card-icon">
-                  <Looks3Icon sx={{ fontSize: 100 }} />
+                  <Looks3Icon sx={{ fontSize: 100, color: "#e03a71" }} />
 
                 </div>
                 <div className="services-card-content">
@@ -216,7 +216,7 @@ function Dashboard() {
                 </div>
               </div>
               <div className="services-review">
-                <h9><AccessTimeIcon sx={{ fontSize: 20 }} />2-3 weeks</h9> <h9><StarPurple500RoundedIcon sx={{ fontSize: 20 }} />50 reviews</h9>
+                <h9><AccessTimeIcon sx={{ fontSize: 20 }} /> 2-3 weeks</h9> <h9><StarPurple500RoundedIcon sx={{ fontSize: 20, color: "#e5c702"  }} /> 50 reviews</h9>
               </div>
 
 
@@ -227,7 +227,7 @@ function Dashboard() {
             <div className='services-card'>
               <div className="services-card-inner">
                 <div className="services-card-icon">
-                  <Looks4Icon sx={{ fontSize: 100 }} />
+                  <Looks4Icon sx={{ fontSize: 100, color: "#e5c702" }} />
 
                 </div>
                 <div className="services-card-content">
@@ -236,7 +236,7 @@ function Dashboard() {
                 </div>
               </div>
               <div className="services-review">
-                <h9><AccessTimeIcon sx={{ fontSize: 20 }} />1-2 month(s)</h9> <h9><StarPurple500RoundedIcon sx={{ fontSize: 20 }} />50 reviews</h9>
+                <h9><AccessTimeIcon sx={{ fontSize: 20 }} /> 1-2 month(s)</h9> <h9><StarPurple500RoundedIcon sx={{ fontSize: 20, color: "#e5c702"  }} /> 50 reviews</h9>
               </div>
 
 
@@ -247,7 +247,7 @@ function Dashboard() {
             <div className="services-card">
               <div className="services-card-inner">
                 <div className="services-card-icon">
-                  <Looks5Icon sx={{ fontSize: 100 }} />
+                  <Looks5Icon sx={{ fontSize: 100, color: "#1c90d5" }} />
 
                 </div>
 
@@ -257,7 +257,7 @@ function Dashboard() {
                 </div>
               </div>
               <div className="services-review">
-                <h9><AccessTimeIcon sx={{ fontSize: 20 }} />15-20 days</h9> <h9><StarPurple500RoundedIcon sx={{ fontSize: 20 }} />50 reviews</h9>
+                <h9><AccessTimeIcon sx={{ fontSize: 20 }} /> 15-20 days</h9> <h9><StarPurple500RoundedIcon sx={{ fontSize: 20, color: "#e5c702"  }} /> 50 reviews</h9>
               </div>
         </div>
 
@@ -270,7 +270,7 @@ function Dashboard() {
     </div>
       </section >
 
-    <div class="footer">
+    <div className="footer">
       <p>Copyright ©
         <a href="http://precisely.co.in/" > Precisely - Study Abroad </a>
         2020</p>

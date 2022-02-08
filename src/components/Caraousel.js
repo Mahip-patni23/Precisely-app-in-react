@@ -48,7 +48,7 @@ function Caraousel() {
               <h4>{name}</h4>
               <p className="title">{title}</p>
               <div className="profile-footer">
-                  <div className = "rating" style={{color: 'yellow darken-4'}}> 
+                  <div className = "rating" style={{color: "#e5c702"}}> 
                     <StarRoundedIcon />                  
                     <p> {rating}</p>
                   </div>

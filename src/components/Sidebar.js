@@ -26,16 +26,16 @@ function Sidebar() {
                     </li>
                     
                     <li>
-                        <a href="src\pages\Calendar" className="ai-icon" aria-expanded="false">                      
+                        <Link to="./Calendar" className="ai-icon" aria-expanded="false">                      
                             <DateRangeOutlinedIcon />
                             <span className="nav-text">Calendar</span>                       
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="./app-call.html" className="ai-icon" aria-expanded="false">
+                        <Link to="./ScheduleCall" className="ai-icon" aria-expanded="false">
                             <CallOutlinedIcon/>
                             <span className="nav-text">Schedule a call</span>
-                        </a>
+                        </Link>
                     </li>
                     
                     <li>
@@ -45,7 +45,7 @@ function Sidebar() {
                         </a>
                         <ul aria-expanded="false">
 
-                            <li><a className="doc-items" href="./coming-soon.html" > Resume/CV upload & review </a></li>
+                            <li><Link className="doc-items" to="./UploadResume" > Resume/CV upload & review </Link></li>
                             <li><a className="doc-items" href="./coming-soon.html" > SOP upload & review </a></li>
                             <li><a className="doc-items" href="./coming-soon.html" > LOR upload & review </a></li>
                             <li><a className="doc-items" href="./coming-soon.html" > Essay upload & review </a></li>
