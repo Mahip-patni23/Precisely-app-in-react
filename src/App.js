@@ -16,6 +16,7 @@ import Dashboard from './pages/Dashboard';
 import Calendar from './pages/Calendar';
 import ScheduleCall from './pages/ScheduleCall';
 import UploadResume from './pages/UploadResume';
+import SOPPage from './pages/SOPPage';
 
 
 function App() {
@@ -81,6 +82,10 @@ function App() {
 
           <Route path='/UploadResume'>
             <UploadResume></UploadResume>
+          </Route>
+
+          <Route path='/SOPPage'>
+            <SOPPage></SOPPage>
           </Route>
 
         </Switch>

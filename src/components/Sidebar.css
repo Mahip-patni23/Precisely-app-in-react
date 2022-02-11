@@ -31,6 +31,7 @@
   justify-content: center;
   text-align: center;
   font-size: 1.05rem;
+  cursor: pointer;
 }
 
 .doc-items {

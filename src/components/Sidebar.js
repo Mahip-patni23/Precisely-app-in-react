@@ -54,26 +54,25 @@ function Sidebar() {
               <ul aria-expanded="false" className="options">
                 <li>
                   <Link className="doc-items" to="./UploadResume">
-                    {" "}
-                    Resume/CV upload & review{" "}
+                    
+                    Resume/CV upload & review
+                  </Link>
+                </li>
+                <li>
+                  <Link className="doc-items" to="./SOPPage">
+                    SOP upload & review
                   </Link>
                 </li>
                 <li>
                   <a className="doc-items" href="./coming-soon.html">
-                    {" "}
-                    SOP upload & review{" "}
+                    
+                    LOR upload & review
                   </a>
                 </li>
                 <li>
                   <a className="doc-items" href="./coming-soon.html">
-                    {" "}
-                    LOR upload & review{" "}
-                  </a>
-                </li>
-                <li>
-                  <a className="doc-items" href="./coming-soon.html">
-                    {" "}
-                    Essay upload & review{" "}
+                    
+                    Essay upload & review
                   </a>
                 </li>
               </ul>
