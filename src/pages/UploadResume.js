@@ -3,6 +3,7 @@ import "./Dashboard.css";
 import "./UploadResume.css";
 import DashboardHeader from "../components/DashboardHeader";
 import Sidebar from "../components/Sidebar";
+import { Button } from "react-bootstrap";
 
 function UploadResume() {
 
@@ -30,6 +31,10 @@ function UploadResume() {
                     <input className="input-btn" type="file" name="file" onChange={changeHandler} />
                 </div>
 
+                <Button variant="primary" size="sm" className="resume-upload-btn">
+                   Upload
+                </Button>
+
                 <div className="resume-review-box">
                     <div className="resume-flexbox">
                         <h4>Expert Review of your Resume :</h4>
@@ -40,12 +45,13 @@ function UploadResume() {
                     </div>
                 </div>
 
-                <div className="footer">
+                
+            </section>
+            <div className="footer">
                     <p>Copyright ©
                         <a href="http://precisely.co.in/" > Precisely - Study Abroad </a>
                         2020</p>
                 </div>
-            </section>
         </>
     )
 }

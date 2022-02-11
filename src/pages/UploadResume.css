@@ -1,38 +1,44 @@
-.resume-heading{
-    margin-top: 25px;
-    text-align: center;
+.resume-heading {
+  margin-top: 25px;
+  text-align: center;
 }
 
-.input-file{
-    justify-content: center;
-    align-items: center;
-    height: max-content;
-    text-align: center;
+.input-file {
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  text-align: center;
 }
 
-.resume-review-box{
-    height: 500px;
-    width: 100%;
-    padding: 5% 5% 5% 5%;
-    margin-top: 50px;
+.resume-review-box {
+  height: 500px;
+  width: 100%;
+  padding: 5% 5% 5% 5%;
+  margin-top: 50px;
 }
 
-.resume-flexbox{
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-    justify-content: left;
-    padding: 2% 3% 3% 3%;
-    border-radius: 25px;
-    background-color: white;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+.resume-flexbox {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: left;
+  padding: 2% 3% 3% 3%;
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
-.expert-review{
-    height: 200px;
-    justify-content: left;
-    padding: 0.5% 0.5% 0.5% 0.5%;
-    border-radius: 25px;
-    margin-top: 2%;
-    background-color: whitesmoke;
+.expert-review {
+  height: 200px;
+  justify-content: left;
+  padding: 0.5% 0.5% 0.5% 0.5%;
+  border-radius: 25px;
+  margin-top: 2%;
+  background-color: whitesmoke;
 }
+
+.resume-upload-btn {
+  margin-top: 30px;
+}
+
+

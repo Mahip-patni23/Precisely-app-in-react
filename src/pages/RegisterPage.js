@@ -2,10 +2,10 @@ import React,{useState} from 'react';
 import './LoginPage.css';
 import {Link} from 'react-router-dom';
 
+
 function RegisterPage() {
   const[username, setUsername] = useState("");
   const[phoneNumber, setPhoneNumber] = useState("");
-  /* const[password, setPassword] = useState(""); */
 
   return <div className="authenticationPage">
             <div className="authenticationPage-signIn-section">

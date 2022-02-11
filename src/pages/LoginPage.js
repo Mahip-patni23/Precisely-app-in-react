@@ -4,6 +4,7 @@ import { useHistory, Link } from "react-router-dom";
 
 function LoginPage() {
     const history = useHistory();
+    
   return <div className="authenticationPage">
             <div className="authenticationPage-signIn-section">
                 <div className="authenticationPage-logo">
