@@ -2,21 +2,57 @@ import React,{useState} from 'react';
 import './LoginPage.css';
 import {Link} from 'react-router-dom';
 import {app} from '../firebase';
-import {createUserWithEmailAndPassword, getAuth} from 'firebase/auth';
+import {signInWithPhoneNumber, getAuth, RecaptchaVerifier} from 'firebase/auth';
+import {useHistory} from 'react-router-dom';
 
 function RegisterPage() {
-  const[email, setEmail] = useState("");
-  const[password, setPassword] = useState("");
+    const history = useHistory();
+  const[phoneNumber, setPhoneNumber] = useState("");
 
+  const auth = getAuth();
+  const setUpRecaptcha = () => {
+      window.recaptchaVerifier = new RecaptchaVerifier(
+          "recaptcha-container",
+          {
+              size: "invisible",
+              callback: (response) => {
+                  console.log("captcha resolved");
+                  RegisterUser();
+              },
+              defaultCountry: "IN",
+          }, auth);
+  };
+    
   const RegisterUser = (e) => {
       e.preventDefault();
-      const auth = getAuth();
+      setUpRecaptcha();
 
-      createUserWithEmailAndPassword(auth, email, password)
-      .then((response) => {
-          console.log(response);
+      var phoneNumber1 = "+911234567899";
+      console.log(phoneNumber1);
+
+      
+      var appVerifier = window.recaptchaVerifier;
+      
+      signInWithPhoneNumber(auth, phoneNumber1, appVerifier)
+      .then((confirmationResult) => {
+          window.confirmationResult = confirmationResult;
+          const code = window.prompt("Enter OTP");
+          confirmationResult
+          .confirm(code)
+          .then((result) => {
+            // User signed in successfully.
+             const user = result.user;
+             console.log("User is Signed In");
+             history.push('./QuestionForm1');
+          // ...
+          }).catch((error) => {
+          // User couldn't sign in (bad verification code?)
+          // ...
+          alert("Incorrect OTP")
+        });
+
       }).catch((error) => {
-          console.log(error.message);
+          /* console.log(error.message); */
       })
   };
 
@@ -26,22 +62,16 @@ function RegisterPage() {
 				    <a href="index.html"><img src="" alt="brand-logo"/></a>
 			    </div>
                 <h4 className="authenticationPage-signIn-heading">Sign up your account</h4>
-                <form className="authenticationPage-signIn-form">
-                    <div className="form-group authenticationPage-form-group">
-                        <label className="authenticationPage-label"><strong>Username</strong></label>
-                        <input type="email" className="form-control" placeholder="username" value={email} onChange={(e) => setEmail(e.target.value)}/>
-                    </div>
+                <form onSubmit={RegisterUser}>
+                    
+                    <div id="recaptcha-container"></div>
                     <div className="form-group authenticationPage-form-group">
                         <label className="authenticationPage-label"><strong>Phone Number</strong></label>
-                        <input type="password" className="form-control" placeholder="***" value={password} onChange={(e) => setPassword(e.target.value)}/>
+                        <input type="phone" className="form-control" placeholder="98712***" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)}/>
                     </div>
-                    {/* <div className="form-group authenticationPage-form-group">
-                        <label className="authenticationPage-label"><strong>Password</strong></label>
-                        <input type="password" className="form-control" placeholder="********" value={password}/>
-                    </div> */}
                     
                     <div className="authenticationPage-signIn-btn">
-                        <button className="btn" onClick={RegisterUser}>Sign Up</button>
+                        <button className="btn" type="submit" >Sign Up</button>
                     </div>
                 </form>
                 <div className="authenticationPage-footer">
