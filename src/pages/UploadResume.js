@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Dashboard.css";
 import "./UploadResume.css";
 import DashboardHeader from "../components/DashboardHeader";

@@ -11,3 +11,7 @@
 .range-input > input {
   margin-top: -7px;
 }
+
+.select-dropdown-majors {
+  width: 50%;
+}

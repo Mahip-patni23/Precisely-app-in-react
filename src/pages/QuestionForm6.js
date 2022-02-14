@@ -3,8 +3,16 @@ import './QuestionForm1.css';
 import './QuestionForm6.css';
 import QuestionFormBackground from '../components/QuestionFormBackground';
 import Navbar from '../components/Navbar';
-import {Dropdown, DropdownButton, ButtonGroup} from 'react-bootstrap';
 import {useHistory} from 'react-router-dom';
+import Select from 'react-select';
+
+const options = [
+  { value: 'cse', label: 'Computer Science And Engineering' },
+  { value: 'economics', label: 'Economics' },
+  { value: 'education', label: 'Education' },
+  { value: 'ce', label: 'Civil Engineering' },
+  { value: 'me', label: 'Mechanical Engineering' }
+]
 
 function QuestionForm6() {
     const history = useHistory();
@@ -25,46 +33,22 @@ function QuestionForm6() {
                           <input type="number" placeholder="University Ranking (0-1000)" className="form-control"/>
                         </div>
                         
-                        
-                        {/* <Dropdown>
-                          <Dropdown.Toggle id="dropdown-button-dark-example1" variant="secondary">
-                           Select Majors
-                          </Dropdown.Toggle>
-
-                          <Dropdown.Menu variant="dark">
-                            <Dropdown.Item href="#/action-2">Computer Science Engineering</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">Economics</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">Education</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">Civil Engineering</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">Electronics and Communication Engineering</Dropdown.Item>
-                            <Dropdown.Item href="#/action-2">Mechanical Engineering</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">Electrical Engineering</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">Finance</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">Data Science</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">Physics</Dropdown.Item>
-                            <Dropdown.Item href="#/action-2">Biostatics</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">Material Science</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">Mathematics</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">Environmental Engineering</Dropdown.Item>
-                          </Dropdown.Menu>
-                        </Dropdown> */}
 
                         <div className="mb-2">
-                          {[DropdownButton].map((DropdownType, idx) => (
-                            <DropdownType
-                              as={ButtonGroup}
-                              key={idx}
-                              id={`dropdown-button-drop-${idx}`}
-                              size="lg"
-                              title="Select Majors"
-                            >
-                              <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-                              <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-                              <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
-                              <Dropdown.Divider />
-                              <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-                            </DropdownType>
-                          ))}
+                          <Select
+                            options={options}
+                            className="select-dropdown-majors"
+                            placeholder="Select Majors"
+                            theme={(theme) => ({
+                              ...theme,
+                              borderRadius: 0,
+                              colors: {
+                                ...theme.colors,
+                                primary25: 'lightblue',
+                                primary: 'blue',
+                              },
+                            })}
+                          />
                         </div>
 
 
