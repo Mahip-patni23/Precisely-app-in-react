@@ -1,7 +1,7 @@
 import React from 'react';
 import DashboardHeader from '../components/DashboardHeader';
 import Sidebar from '../components/Sidebar';
-import { InlineWidget } from "react-calendly";
+// import { InlineWidget } from "react-calendly";
 import './Dashboard.css';
 
 function Calendar() {

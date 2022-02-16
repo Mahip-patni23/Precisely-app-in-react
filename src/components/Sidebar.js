@@ -13,7 +13,8 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 function Sidebar() {
   const [showOptions, setShowOptions] = useState(false);
-  const [select, showSelect] = useState(true);
+  /* const [select, showSelect] = useState(true); */
+  const select  = true;
 
   return (
     <div className="deznav">
@@ -41,8 +42,9 @@ function Sidebar() {
 
           <li className="menu-item">
             <a
+              href="https://www.precisely.co.in/"
               className="ai-icon options_display"
-              aria-expanded="false"
+              // aria-expanded="false"
               onClick={() => setShowOptions(!showOptions)}
             >
               <DocumentScannerOutlinedIcon />
@@ -51,7 +53,7 @@ function Sidebar() {
             </a>
 
             {showOptions && (
-              <ul aria-expanded="false" className="options">
+              <ul className="options">
                 <li>
                   <Link className="doc-items" to="./UploadResume">
                     

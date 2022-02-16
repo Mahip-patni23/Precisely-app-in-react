@@ -6,7 +6,7 @@ function DashboardHeader(props) {
   return (
       <>
     <div className="nav-header">
-            <a href="index.html" className="brand-logo">
+            <a href="https://www.precisely.co.in/" className="brand-logo">
                 <img className="logo-abbr" src="https://demo.precisely.co.in/images/logo.png" alt=""></img>
                 <img className="brand-title" src='https://demo.precisely.co.in/images/logo-text.png' alt=""></img>
             </a>
@@ -32,7 +32,7 @@ function DashboardHeader(props) {
                     <ul className="navbar-nav header-right">
                     
                         <li className="nav-item dropdown notification_dropdown">
-                            <a className="nav-link bell bell-link" href="javascript:void(0)">
+                            <a className="nav-link bell bell-link" href="https://www.precisely.co.in/">
                                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -51,7 +51,7 @@ function DashboardHeader(props) {
                         
                         <li className="nav-item dropdown header-profile">
                             <AccountCircleSharpIcon sx={{ fontSize: 50 }}/>
-                            <a className="nav-link" href="javascript:void(0)" role="button" data-toggle="dropdown">
+                            <a className="nav-link" href="https://www.precisely.co.in/" role="button" data-toggle="dropdown">
                                 <div className="header-info">
                                     <span id="username" className="text-black">demo</span>
                                     <p className="fs-12 mb-0">Super Admin</p>

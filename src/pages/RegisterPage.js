@@ -41,7 +41,7 @@ function RegisterPage() {
           .confirm(code)
           .then((result) => {
             // User signed in successfully.
-             const user = result.user;
+             /* const user = result.user; */
              console.log("User is Signed In");
              history.push('./QuestionForm1');
           // ...
@@ -59,7 +59,7 @@ function RegisterPage() {
   return <div className="authenticationPage">
             <div className="authenticationPage-signIn-section">
                 <div className="authenticationPage-logo">
-				    <a href="index.html"><img src="" alt="brand-logo"/></a>
+				    <a href="https://www.precisely.co.in/"><img className="brand-title" src='https://demo.precisely.co.in/images/logo-text.png' alt=""></img></a>
 			    </div>
                 <h4 className="authenticationPage-signIn-heading">Sign up your account</h4>
                 <form onSubmit={RegisterUser}>

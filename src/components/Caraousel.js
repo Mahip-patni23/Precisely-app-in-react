@@ -52,7 +52,7 @@ function Caraousel() {
                     <StarRoundedIcon />                  
                     <p> {rating}</p>
                   </div>
-                  <a href="#" className='send-request-link'>Send Request</a>
+                  <a href="https://www.precisely.co.in/" className='send-request-link'>Send Request</a>
               </div>
             </article>
           })
