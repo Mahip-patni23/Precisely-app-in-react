@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import LoginPage from './pages/LoginPage';
+/* import LoginPage from './pages/LoginPage'; */
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import RegisterPage from './pages/RegisterPage';
 import ForgotPasswordPage from './pages/ForgotPasswordPage';
@@ -22,13 +22,13 @@ import SOPPage from './pages/SOPPage';
 function App() {
   return (
     <Router>
-      <div classNameName="App">
+      <div className="App">
         <Switch>
-          <Route exact path='/'>
+          {/* <Route exact path='/'>
             <LoginPage></LoginPage>
-          </Route>
+          </Route> */}
 
-          <Route path='/RegisterPage'>
+          <Route exact path='/'>
             <RegisterPage></RegisterPage>
           </Route>
 

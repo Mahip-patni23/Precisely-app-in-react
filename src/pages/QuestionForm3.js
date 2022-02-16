@@ -39,7 +39,7 @@ function QuestionForm3(props) {
                           Add
                         </Button>
 
-                          <Modal{...props}
+                          <Modal {...props}
                             size="lg"
                             aria-labelledby="contained-modal-title-vcenter"
                             centered show={show} onHide={handleClose}>

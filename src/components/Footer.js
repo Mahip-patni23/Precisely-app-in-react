@@ -4,8 +4,8 @@ import './Footer.css';
 function Footer() {
   return <div className='Footer'>
       <footer>
-          <div class="link">
-            <a href="https://www.precisely.co.in" class="animated_link">Precisely Website</a>
+          <div className="link">
+            <a href="https://www.precisely.co.in" className="animated_link">Precisely Website</a>
           </div>
       </footer>
   </div>;

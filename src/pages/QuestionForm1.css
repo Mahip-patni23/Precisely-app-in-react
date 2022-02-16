@@ -147,14 +147,15 @@ input[type="radio"] {
   margin-right: 5px;
 }
 
-.container_check > a {
+.container_check > p {
   color: #ccc;
   margin-left: 5px;
   cursor: pointer;
   transition: all 0.3s linear;
+  display: inline;
 }
 
-.container_check > a:hover {
+.container_check > p:hover {
   color: blue;
 }
 
