@@ -149,24 +149,24 @@ function Dashboard() {
                   <div className="services-card-inner">
                     <div className="services-card-icon">
                       <LooksOneIcon sx={{ fontSize: 100, color: "#2aa769" }} />
-                      {/* <h9><AccessTimeIcon sx={{ fontSize: 20 }} />3-5 days</h9> */}
+                      {/* <p><AccessTimeIcon sx={{ fontSize: 20 }} />3-5 days</p> */}
                     </div>
 
                     <div className="services-card-content">
                       <h6>SOP review & editing</h6>
-                      <h7>Precisely</h7>
+                      <p>Precisely</p>
                     </div>
                   </div>
                   <div className="services-review">
-                    <h9>
+                    <p>
                       <AccessTimeIcon sx={{ fontSize: 20 }} /> 3-5 days
-                    </h9>{" "}
-                    <h9>
+                    </p>
+                    <p>
                       <StarPurple500RoundedIcon
                         sx={{ fontSize: 20, color: "#e5c702" }}
-                      />{" "}
+                      />
                       50 reviews
-                    </h9>
+                    </p>
                   </div>
                 </div>
 
@@ -179,20 +179,20 @@ function Dashboard() {
                     </div>
                     <div className="services-card-content">
                       <h6>Addmission Interview Preperation</h6>
-                      <h7>YSI x Precisely</h7>
+                      <p>YSI x Precisely</p>
                     </div>
                   </div>
 
                   <div className="services-review">
-                    <h9>
+                    <p>
                       <AccessTimeIcon sx={{ fontSize: 20 }} /> 1-2 weeks
-                    </h9>{" "}
-                    <h9>
+                    </p>
+                    <p>
                       <StarPurple500RoundedIcon
                         sx={{ fontSize: 20, color: "#e5c702" }}
-                      />{" "}
+                      />
                       50 reviews
-                    </h9>
+                    </p>
                   </div>
                 </div>
 
@@ -205,19 +205,19 @@ function Dashboard() {
                     </div>
                     <div className="services-card-content">
                       <h6>IELTS/TOFEL/CAE Test Preperation</h6>
-                      <h7>University Connection x Precisely</h7>
+                      <p>University Connection x Precisely</p>
                     </div>
                   </div>
                   <div className="services-review">
-                    <h9>
+                    <p>
                       <AccessTimeIcon sx={{ fontSize: 20 }} /> 2-3 weeks
-                    </h9>{" "}
-                    <h9>
+                    </p>
+                    <p>
                       <StarPurple500RoundedIcon
                         sx={{ fontSize: 20, color: "#e5c702" }}
-                      />{" "}
+                      />
                       50 reviews
-                    </h9>
+                    </p>
                   </div>
                 </div>
 
@@ -230,19 +230,19 @@ function Dashboard() {
                     </div>
                     <div className="services-card-content">
                       <h6>Full University Application Guidance</h6>
-                      <h7>Precisely</h7>
+                      <p>Precisely</p>
                     </div>
                   </div>
                   <div className="services-review">
-                    <h9>
+                    <p>
                       <AccessTimeIcon sx={{ fontSize: 20 }} /> 1-2 month(s)
-                    </h9>{" "}
-                    <h9>
+                    </p>
+                    <p>
                       <StarPurple500RoundedIcon
                         sx={{ fontSize: 20, color: "#e5c702" }}
-                      />{" "}
+                      />
                       50 reviews
-                    </h9>
+                    </p>
                   </div>
                 </div>
 
@@ -256,19 +256,19 @@ function Dashboard() {
 
                     <div className="services-card-content">
                       <h6>Loan/Finance Services</h6>
-                      <h7>HDFC Credila x Precisely</h7>
+                      <p>HDFC Credila x Precisely</p>
                     </div>
                   </div>
                   <div className="services-review">
-                    <h9>
+                    <p>
                       <AccessTimeIcon sx={{ fontSize: 20 }} /> 15-20 days
-                    </h9>{" "}
-                    <h9>
+                    </p>
+                    <p>
                       <StarPurple500RoundedIcon
                         sx={{ fontSize: 20, color: "#e5c702" }}
-                      />{" "}
+                      />
                       50 reviews
-                    </h9>
+                    </p>
                   </div>
                 </div>
 

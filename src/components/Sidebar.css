@@ -1,8 +1,7 @@
 .deznav {
   width: 21.563rem;
   padding-bottom: 0;
-  min-height: 447vh;
-  height: auto;
+  /* height: auto; */
   /* 279% */
 
   position: absolute;

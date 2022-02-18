@@ -1,5 +1,6 @@
 .main{
   display: flex;
+  width: 100%;
 }
 .dash-main {
   display: flex;
@@ -11,13 +12,14 @@
   top: auto;
   background-color: #f5f5f5;
   align-items: center;
+  right: 0;
 }
 
 .dash-card-section {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 30px 30px 30px 30px;
+  padding: 40px;
 }
 
 .dash-card {

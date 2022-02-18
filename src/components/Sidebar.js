@@ -13,7 +13,7 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 function Sidebar() {
   const [showOptions, setShowOptions] = useState(false);
-  /* const [select, showSelect] = useState(true); */
+  // const [select, showSelect] = useState(true); 
   const select  = true;
 
   return (
