@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react'
 import Sidebar from "../components/Sidebar";
 import DashboardHeader from "../components/DashboardHeader";
 import "./Dashboard.css";
 
-function ScheduleCall() {
+const RecommendedMentors = () => {
   return (
     <>
       <div className="main">
         <Sidebar />
         <div>
-          <DashboardHeader name="Schedule a call" />
+          <DashboardHeader name="Recommended Mentors" />
           <section className="dash-main">
             
           </section>
@@ -24,7 +24,7 @@ function ScheduleCall() {
         </div>
       </div>
     </>
-  );
+  )
 }
 
-export default ScheduleCall;
+export default RecommendedMentors

@@ -17,6 +17,10 @@ import Calendar from './pages/Calendar';
 import ScheduleCall from './pages/ScheduleCall';
 import UploadResume from './pages/UploadResume';
 import SOPPage from './pages/SOPPage';
+import ImmigrationServices from './pages/ImmigrationServices'
+import QuickDocCheck from './pages/QuickDocCheck'
+import FundingFinances from './pages/FundingFinances'
+import RecommendedMentors from './pages/RecommendedMentors'
 
 
 function App() {
@@ -86,6 +90,22 @@ function App() {
 
           <Route path='/SOPPage'>
             <SOPPage></SOPPage>
+          </Route>
+
+          <Route path='/ImmigrationServices'>
+            <ImmigrationServices></ImmigrationServices>
+          </Route>
+
+          <Route path='/QuickDocCheck'>
+            <QuickDocCheck></QuickDocCheck>
+          </Route>
+
+          <Route path='/FundingFinances'>
+            <FundingFinances></FundingFinances>
+          </Route>
+
+          <Route path='/RecommendedMentors'>
+            <RecommendedMentors></RecommendedMentors>
           </Route>
 
         </Switch>

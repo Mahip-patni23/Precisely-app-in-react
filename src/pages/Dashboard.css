@@ -18,8 +18,8 @@
 .dash-card-section {
   display: flex;
   justify-content: center;
-  width: 100%;
-  padding: 40px;
+  width: auto;
+  padding: 2.45rem;
 }
 
 .dash-card {
