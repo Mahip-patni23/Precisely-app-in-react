@@ -42,7 +42,11 @@ function Sidebar() {
           </li>
 
           <li className="menu-item">
-            <NavLink to="./ScheduleCall" className="ai-icon" activeClassName="add-select"  aria-expanded="false">
+            <NavLink 
+            to="./ScheduleCall" 
+            className="ai-icon" 
+            activeClassName="add-select"  
+            aria-expanded="false">
               <CallOutlinedIcon />
               <span className="nav-text">Schedule a call</span>
             </NavLink>
@@ -51,9 +55,10 @@ function Sidebar() {
           <li className="menu-item">
             <NavLink
               to="#"
-              className="ai-icon options_display"
+              className="ai-icon "
+              // options_display
               activeClassName="add-select"
-              // aria-expanded="false"
+              aria-expanded="false"
               onClick={() => setShowOptions(!showOptions)}
             >
               <DocumentScannerOutlinedIcon />
