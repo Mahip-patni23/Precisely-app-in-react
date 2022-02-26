@@ -7,8 +7,9 @@ import {useHistory} from 'react-router-dom';
 
 function RegisterPage() {
     const history = useHistory();
-  const[phoneNumber, setPhoneNumber] = useState("");
+    const[phoneNumber, setPhoneNumber] = useState("");
 
+    
   const auth = getAuth();
   const setUpRecaptcha = () => {
       window.recaptchaVerifier = new RecaptchaVerifier(
