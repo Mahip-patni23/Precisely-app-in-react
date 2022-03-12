@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Sidebar.css";
-import ListOutlinedIcon from "@mui/icons-material/ListOutlined";
+import ListRoundedIcon from '@mui/icons-material/ListRounded';
 import DateRangeOutlinedIcon from "@mui/icons-material/DateRangeOutlined";
 import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
 import DocumentScannerOutlinedIcon from "@mui/icons-material/DocumentScannerOutlined";
@@ -8,62 +8,79 @@ import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import DiamondOutlinedIcon from "@mui/icons-material/DiamondOutlined";
 import PublicOutlinedIcon from "@mui/icons-material/PublicOutlined";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 function Sidebar() {
   const [showOptions, setShowOptions] = useState(false);
-  /* const [select, showSelect] = useState(true); */
-  const select  = true;
+  const [select, showSelect] = useState(false); 
+  // const select  = true;
+
 
   return (
     <div className="deznav">
       <div className="deznav-scroll">
         <ul className="metismenu" id="menu">
           <li className="menu-item">
-            <Link to="./Dashboard" className={`${select? "add-select ai-icon":"ai-icon"}`} aria-expanded="false">
-              <ListOutlinedIcon />
+            <NavLink to="./Dashboard" 
+            className="ai-icon" 
+            activeClassName="add-select"
+            aria-expanded="false">
+              <ListRoundedIcon />
               <span className="nav-text">Dashboard</span>
-            </Link>
+            </NavLink>
           </li>
 
           <li className="menu-item">
-            <Link to="./Calendar" className="ai-icon"  aria-expanded="false">
+            <NavLink to="./Calendar" 
+            className="ai-icon" 
+            activeClassName="add-select" 
+            aria-expanded="false">
               <DateRangeOutlinedIcon />
               <span className="nav-text">Calendar</span>
-            </Link>
-          </li>
-          <li className="menu-item">
-            <Link to="./ScheduleCall" className="ai-icon" aria-expanded="false">
-              <CallOutlinedIcon />
-              <span className="nav-text">Schedule a call</span>
-            </Link>
+            </NavLink>
           </li>
 
           <li className="menu-item">
-            <a
-              href="https://www.precisely.co.in/"
-              className="ai-icon options_display"
-              // aria-expanded="false"
-              onClick={() => setShowOptions(!showOptions)}
+            <NavLink 
+            to="./ScheduleCall" 
+            className="ai-icon" 
+            activeClassName="add-select"  
+            aria-expanded="false">
+              <CallOutlinedIcon />
+              <span className="nav-text">Schedule a call</span>
+            </NavLink>
+          </li>
+
+          <li className="menu-item">
+            <NavLink
+              to="#"
+              className="ai-icon "
+              // options_display
+              activeClassName={select?"add-select":"none"}
+              
+              aria-expanded="false"
+              onClick={() => {
+                setShowOptions(!showOptions);
+                showSelect(true);
+              }}
             >
               <DocumentScannerOutlinedIcon />
-              <span className="nav-text">Doc review services </span>
+              <span className="nav-text">Doc review services</span>
               <ChevronRightIcon />
-            </a>
+            </NavLink>
 
             {showOptions && (
               <ul className="options">
                 <li>
-                  <Link className="doc-items" to="./UploadResume">
-                    
+                  <NavLink className="doc-items" activeClassName="none" to="./UploadResume">
                     Resume/CV upload & review
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link className="doc-items" to="./SOPPage">
+                  <NavLink className="doc-items" activeClassName="none" to="./SOPPage">
                     SOP upload & review
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
                   <a className="doc-items" href="./coming-soon.html">
@@ -80,52 +97,62 @@ function Sidebar() {
               </ul>
             )}
           </li>
+
           <li className="menu-item">
-            <a
-              href="./coming-soon.html"
+            <NavLink
+              to='./QuickDocCheck'
               className="ai-icon"
+              activeClassName="add-select"
               aria-expanded="false"
             >
               <SearchOutlinedIcon />
               <span className="nav-text">Quick Document Check</span>
-            </a>
+            </NavLink>
           </li>
+
           <li className="menu-item">
-            <a
-              href="./coming-soon.html"
+            <NavLink
+              to='./RecommendedMentors'
+              activeClassName="add-select"
               className="ai-icon"
               aria-expanded="false"
             >
               <PersonOutlineOutlinedIcon />
               <span className="nav-text">Recommended Mentors</span>
-            </a>
+            </NavLink>
           </li>
+
           <li className="menu-item">
-            <a
-              href="./coming-soon.html"
+            <NavLink
+              to='./FundingFinances'
+              activeClassName="add-select"
               className="ai-icon"
               aria-expanded="false"
             >
               <DiamondOutlinedIcon />
               <span className="nav-text">Funding and Finances</span>
-            </a>
+            </NavLink>
           </li>
+
           <li className="menu-item">
-            <a
-              href="./coming-soon.html"
+            <NavLink
+              to="./ImmigrationServices"
+              activeClassName="add-select"
               className="ai-icon"
               aria-expanded="false"
             >
               <PublicOutlinedIcon />
               <span className="nav-text">Immigration Services</span>
-            </a>
+            </NavLink>
           </li>
+
+
         </ul>
         <div className="add-menu-sidebar">
           <img
             src="https://demo.precisely.co.in/images/calendar.png"
             alt=""
-          ></img>
+          />
           <p className="font-w500 mb-0">Start your journey today</p>
         </div>
         <div className="copyright">

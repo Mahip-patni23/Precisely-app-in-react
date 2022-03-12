@@ -1,15 +1,15 @@
-import React from "react";
-import Sidebar from "../components/Sidebar";
-import DashboardHeader from "../components/DashboardHeader";
-import "./Dashboard.css";
+import React from 'react'
+import DashboardHeader from '../components/DashboardHeader';
+import Sidebar from '../components/Sidebar';
+import './Dashboard.css';
 
-function ScheduleCall() {
+const QuickDocCheck = () => {
   return (
     <>
       <div className="main">
         <Sidebar />
         <div>
-          <DashboardHeader name="Schedule a call" />
+          <DashboardHeader name="Quick Document Check" />
           <section className="dash-main">
             
           </section>
@@ -24,7 +24,7 @@ function ScheduleCall() {
         </div>
       </div>
     </>
-  );
+  )
 }
 
-export default ScheduleCall;
+export default QuickDocCheck
