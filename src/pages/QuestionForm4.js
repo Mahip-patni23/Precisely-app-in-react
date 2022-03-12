@@ -5,6 +5,7 @@ import './QuestionForm4.css';
 import QuestionFormBackground from '../components/QuestionFormBackground';
 import Navbar from '../components/Navbar';
 import {useHistory} from 'react-router-dom';
+import Footer from "../components/Footer";
 import {Button, Modal, Form} from 'react-bootstrap';
 
 function QuestionForm4(props) {
@@ -77,6 +78,7 @@ function QuestionForm4(props) {
                         </div> 
                 </form>
             </div>
+            <Footer></Footer>
         </div>;
 }
 

@@ -3,6 +3,7 @@ import './QuestionForm1.css';
 import './QuestionForm8.css';
 import QuestionFormBackground from '../components/QuestionFormBackground';
 import Navbar from '../components/Navbar';
+import Footer from "../components/Footer";
 import {Link, useHistory} from 'react-router-dom';
 
 
@@ -91,6 +92,7 @@ function QuestionForm8() {
                         </div> 
                 </form>
             </div>
+            <Footer></Footer>
         </div>;
 }
 

@@ -4,6 +4,7 @@ import './QuestionForm6.css';
 import QuestionFormBackground from '../components/QuestionFormBackground';
 import Navbar from '../components/Navbar';
 import {useHistory} from 'react-router-dom';
+import Footer from "../components/Footer";
 import Select from 'react-select';
 
 const options = [
@@ -71,6 +72,7 @@ function QuestionForm6() {
                       </div>
                 </form>
             </div>
+            <Footer></Footer>
         </div>
 }
 
